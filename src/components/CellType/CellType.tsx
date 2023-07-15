@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { AppTheme, FrameSVGUnderline, Text, FrameSVG } from "@arwes/react"
+import { AppTheme, FrameSVGUnderline, Text } from "@arwes/react"
 import { FC } from "react"
 
 interface Props{
