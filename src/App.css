@@ -1,0 +1,142 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card .arwes-react-frames-framesvg [data-name=bg] {
+  color: blue
+}
+.card .arwes-react-frames-framesvg [data-name=line] {
+  color: black
+}
+
+.container-wrap{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* background-color: #f2f2f2; */
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+      height: 100%;
+      /* background-color: #ffffff; */
+      overflow-y: scroll;
+}
+
+.type-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+}
+.type-content{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.type-container{
+  width: 45%;
+  border-radius: 1em;
+  color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,.75);
+
+}
+
+.bug {
+  background: #92BC2C;
+  box-shadow: 0 0 12px #92BC2C;
+}
+
+.dark {
+  background: #595761;
+  box-shadow: 0 0 12px #595761;
+}
+
+.dragon {
+  background: #0C69C8;
+  box-shadow: 0 0 12px #0C69C8;
+}
+
+.electric {
+  background: #F2D94E;
+  box-shadow: 0 0 12px #F2D94E;
+}
+
+.fire {
+  background: #FBA54C;
+  box-shadow: 0 0 12px #FBA54C;
+}
+
+.fairy {
+  background: #EE90E6;
+  box-shadow: 0 0 12px #EE90E6;
+}
+
+.fighting {
+  background: #D3425F;
+  box-shadow: 0 0 12px #D3425F;
+}
+
+.flying {
+  background: #A1BBEC;
+  box-shadow: 0 0 12px #A1BBEC;
+}
+
+.ghost {
+  background: #5F6DBC;
+  box-shadow: 0 0 12px #5F6DBC;
+}
+
+.grass {
+  background: #5FBD58;
+  box-shadow: 0 0 12px #5FBD58;
+}
+
+.ground {
+  background: #DA7C4D;
+  box-shadow: 0 0 12px #DA7C4D;
+}
+
+.ice {
+  background: #75D0C1;
+  box-shadow: 0 0 12px #75D0C1;
+}
+
+.normal {
+  background: #A0A29F;
+  box-shadow: 0 0 12px #A0A29F;
+}
+
+.poison {
+  background: #B763CF;
+  box-shadow: 0 0 12px #B763CF;
+}
+
+.psychic {
+  background: #FA8581;
+  box-shadow: 0 0 12px #FA8581;
+}
+
+.rock {
+  background: #C9BB8A;
+  box-shadow: 0 0 12px #C9BB8A;
+}
+
+.steel {
+  background: #5695A3;
+  box-shadow: 0 0 12px #5695A3;
+}
+
+.water {
+  background: #539DDF;
+  box-shadow: 0 0 12px #539DDF;
+}
