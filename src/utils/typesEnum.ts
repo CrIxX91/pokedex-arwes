@@ -3,7 +3,7 @@ export enum TypePokemonColor{
     dark = '#595761',
     dragon ='#0C69C8',
     electric ='#F2D94E',
-    fire = '#FBA54C;',
+    fire = '#FBA54C',
     fairy = '#EE90E6',
     fighting = '#D3425F',
     flying ='#A1BBEC',
