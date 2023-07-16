@@ -1,13 +1,11 @@
-/** @jsx jsx */
-import { AppTheme, FrameSVGUnderline, Text } from "@arwes/react"
+import { FrameSVGUnderline, Text } from "@arwes/react"
 import { FC } from "react"
 
 interface Props{
-    theme:AppTheme,
     name:string
 }
 
-export const CellType:FC<Props> = ({theme,name}) => {
+export const CellType:FC<Props> = ({name}) => {
   return (
     <div style={{
         position: 'relative',
@@ -19,14 +17,14 @@ export const CellType:FC<Props> = ({theme,name}) => {
         height: 50
       }}>
         <FrameSVGUnderline />
-        <style>{`
+        {/* <style>{`
           .card .arwes-react-frames-framesvg [data-name=bg] {
             color: ${theme.colors.primary.deco(1)};
           }
           .card .arwes-react-frames-framesvg [data-name=line] {
             color: ${theme.colors.primary.main(4)};
           }
-        `}</style>
+        `}</style> */}
         <Text as='h6'>
                     {name}
                   </Text>

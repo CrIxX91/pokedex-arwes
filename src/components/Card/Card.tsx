@@ -21,14 +21,14 @@ export const Card:FC<Props> = ({theme}) => {
             }}
             animated={[aaVisibility(), aa('y', '2rem', 0)]}
     >
-        <style>{`
+        {/* <style>{`
           .card .arwes-react-frames-framesvg [data-name=bg] {
             color: ${theme.colors.primary.deco(1)};
           }
           .card .arwes-react-frames-framesvg [data-name=line] {
             color: ${theme.colors.primary.main(4)};
           }
-        `}</style>
+        `}</style> */}
 
             <Animator>
             <FrameSVGCorners strokeWidth={2} />

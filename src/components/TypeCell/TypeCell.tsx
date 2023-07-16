@@ -1,13 +1,12 @@
-import { AppTheme, FrameSVG, FrameSVGPathGeneric, Text } from "@arwes/react";
+import { FrameSVG, FrameSVGPathGeneric, Text } from "@arwes/react";
 import { FC, useMemo } from "react";
 import { fixName } from "../../utils";
 
 interface Props{
     name:string,
-    theme:AppTheme
 }
 
-export const TypeCell:FC<Props> = ({name,theme}) => {
+export const TypeCell:FC<Props> = ({name}) => {
 
     const paths: FrameSVGPathGeneric[] = useMemo(() => [
         // Background shape.
@@ -58,14 +57,14 @@ export const TypeCell:FC<Props> = ({name,theme}) => {
       ], []);
   return (
     <div style={{ position: 'absolute', inset: 20 }}>
-        <style>{`
+        {/* <style>{`
           .card .arwes-react-frames-framesvg [data-name=bg] {
             color: ${theme.colors.primary.deco(1)};
           }
           .card .arwes-react-frames-framesvg [data-name=line] {
             color: ${theme.colors.primary.main(4)};
           }
-        `}</style>
+        `}</style> */}
       <FrameSVG paths={paths} />
         <Text as='span' >
             {fixName(name)}

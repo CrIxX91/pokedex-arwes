@@ -6,10 +6,10 @@
 }
 
 .card .arwes-react-frames-framesvg [data-name=bg] {
-  color: blue
+  color: hsla(200,81%,50%,0.1);
 }
 .card .arwes-react-frames-framesvg [data-name=line] {
-  color: black
+  color: hsla(200,84%,54.74%,1);
 }
 
 .container-wrap{

@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { Animated, Animator, AppTheme, FrameSVGCorners, Text, aa, aaVisibility } from '@arwes/react'
 import { INewPokemon } from '../../interfaces'
 import { fixName } from '../../utils'
-import { CellType, NumberFrame } from '..'
+import { CellType, NumberFrame, TypeFrame } from '..'
 
 interface Props{
     theme:AppTheme,
@@ -30,14 +30,14 @@ export const PokemonCard:FC<Props> = ({theme,pokemon}) => {
             }}
             animated={[aaVisibility(), aa('y', '2rem', 0)]}
     >
-        <style>{`
+        {/* <style>{`
           .card .arwes-react-frames-framesvg [data-name=bg] {
             color: ${theme.colors.primary.deco(1)};
           }
           .card .arwes-react-frames-framesvg [data-name=line] {
             color: ${theme.colors.primary.main(4)};
           }
-        `}</style>
+        `}</style> */}
 
             <Animator>
                 <FrameSVGCorners strokeWidth={2} />
@@ -57,7 +57,7 @@ export const PokemonCard:FC<Props> = ({theme,pokemon}) => {
               
             </NumberFrame>
             {/* <img src={sprites.other?.['official-artwork'].front_default!} alt={name} /> */}
-            <CellType theme={theme} name={fixName(name)}/>
+            <CellType name={fixName(name)}/>
 
             {/* <figure>
               <figcaption> */}
@@ -84,6 +84,7 @@ export const PokemonCard:FC<Props> = ({theme,pokemon}) => {
                 )
               }
             </pre>
+            <TypeFrame/>
             
 
         </Animated>

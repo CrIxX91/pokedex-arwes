@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@arwes/react": "^1.0.0-alpha.21",
+    "@emotion/core": "^11.0.0",
+    "@emotion/css": "^11.11.2",
     "@emotion/react": "^11.11.1",
     "@supabase/supabase-js": "^2.26.0",
     "dotenv": "^16.3.1",
