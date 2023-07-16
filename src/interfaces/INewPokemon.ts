@@ -10,6 +10,7 @@ export interface INewPokemon {
     abilities:  AbilityElement[];
     stats:      Stat[];
     aux_id:     number;
+    name_dex:   string;
 }
 
 export interface AbilityElement {

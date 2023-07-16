@@ -10,7 +10,7 @@ interface Props{
 }
 
 export const PokemonCard:FC<Props> = ({theme,pokemon}) => {
-    const {name,sprites,pokemon_id, types} = pokemon;
+    const {name,sprites,pokemon_id, types, name_dex} = pokemon;
     const getEnumValueByName = (name: string): string =>{
       return TypePokemonColor[name as keyof typeof TypePokemonColor];
     }
@@ -60,7 +60,7 @@ export const PokemonCard:FC<Props> = ({theme,pokemon}) => {
               
             </NumberFrame>
             {/* <img src={sprites.other?.['official-artwork'].front_default!} alt={name} /> */}
-            <CellType name={fixName(name)}/>
+            <CellType name={name_dex}/>
 
             {/* <figure>
               <figcaption> */}
