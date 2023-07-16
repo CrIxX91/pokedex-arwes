@@ -1,8 +1,8 @@
 import { FC } from 'react'
 import { Animated, Animator, AppTheme, FrameSVGCorners, Text, aa, aaVisibility } from '@arwes/react'
 import { INewPokemon } from '../../interfaces'
-import { fixName } from '../../utils'
-import { CellType, NumberFrame, TypeFrame } from '..'
+import { TypePokemonColor, fixName } from '../../utils'
+import { CellType, FrameTypeOcta, NumberFrame, OctaCell, TypeFrame } from '..'
 
 interface Props{
     theme:AppTheme,
@@ -11,6 +11,9 @@ interface Props{
 
 export const PokemonCard:FC<Props> = ({theme,pokemon}) => {
     const {name,sprites,pokemon_id, types} = pokemon;
+    const getEnumValueByName = (name: string): string =>{
+      return TypePokemonColor[name as keyof typeof TypePokemonColor];
+    }
     
   return (
     <Animator merge combine manager='stagger'>
@@ -72,7 +75,7 @@ export const PokemonCard:FC<Props> = ({theme,pokemon}) => {
                         
 
 
-            <pre className='type-content'>
+            {/* <pre className='type-content'>
               {
                 types.map((type)=>
                 // <TypeCell key={type.type.name} name={type.type.name} theme={theme}/>
@@ -83,8 +86,23 @@ export const PokemonCard:FC<Props> = ({theme,pokemon}) => {
                 </div>
                 )
               }
+            </pre> */}
+            {/* <TypeFrame/> */}
+            {/* <OctaCell/> */}
+            <pre className='type-content'>
+              {
+                  types.map((type)=>
+                    
+                    <FrameTypeOcta 
+                      key={type.type.name} 
+                      color={ getEnumValueByName(type.type.name)} 
+                      height='20px' 
+                      text={type.type.name} 
+                      astype='p'/>
+                  )
+              }
+              {/* <FrameTypeOcta color='red' height='20px' text='bug' astype='p'/> */}
             </pre>
-            <TypeFrame/>
             
 
         </Animated>

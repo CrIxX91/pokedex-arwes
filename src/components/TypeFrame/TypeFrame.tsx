@@ -10,6 +10,7 @@ export const TypeFrame = () => {
 
     const svgRef = useRef<SVGSVGElement | null>(null);
     const { onRender } = useFrameSVGAssemblingAnimation(svgRef);
+    
     const styleType = css({
         position:'relative',
         width:'100%',

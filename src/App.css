@@ -36,13 +36,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    
     gap: 1em;
 }
 .type-content{
   display: flex;
   justify-content: space-around;
   position: relative;
+  color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,.75);
 }
+
 .type-container{
   width: 45%;
   border-radius: 1em;
