@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { Animated, Animator, AppTheme, FrameSVGCorners, Text, aa, aaVisibility } from '@arwes/react'
 import { INewPokemon } from '../../interfaces'
 import { TypePokemonColor, fixName } from '../../utils'
-import { CellType, FrameTypeOcta, NumberFrame, OctaCell, TypeFrame } from '..'
+import { CellType, FrameTypeOcta, NumberFrame } from '..'
 
 interface Props{
     theme:AppTheme,
