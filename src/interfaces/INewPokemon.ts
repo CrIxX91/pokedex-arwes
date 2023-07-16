@@ -1,6 +1,4 @@
 export interface INewPokemon {
-    id:         number;
-    created_at: string;
     name:       string;
     pokemon_id: number;
     sprites:    Sprites;

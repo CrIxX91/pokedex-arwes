@@ -46,6 +46,18 @@
   color: white;
   text-shadow: 0 0 5px rgba(0,0,0,.75);
 }
+.desciptionWraper{
+    width: 100%;
+    height: 70%;
+
+    overflow: hidden;
+}
+.desciptionContent{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  text-align: left;
+}
 
 .type-container{
   width: 45%;

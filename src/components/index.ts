@@ -5,4 +5,6 @@ export * from './CellType/CellType'
 export * from './NumberFrame/NumberFrame'
 export * from './TypeFrame/TypeFrame'
 export * from './OctaCell/OctaCell'
-export * from './FrameTypeOcta/FrameTypeOcta'
+export * from './FrameTypeOcta/FrameTypeOcta';
+export * from '../pages/PokedexPage/PokedexPage'
+export * from './LoadingFrame/LoadingFrame'
