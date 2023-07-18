@@ -27,7 +27,7 @@ const animatorsSettings: AnimatorGeneralProviderSettings = {
 
 
 function App() {
-  const [active] = useState(true);
+  // const [active] = useState(true);
   const [pokemons, setPokemons] = useState<INewPokemon[]>([]);
 
   const fetchPokeData = async ()=>{
@@ -45,6 +45,7 @@ function App() {
         {/* <Animator combine manager='stagger' active={active}> */}
           <Background theme={theme} />
           <LoadingPage/>
+          
         {/* 
             
              */}
